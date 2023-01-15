@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "bundle": ".\\node_modules\\.bin\\esbuild src/main.ts --outfile=resources/js/main.js --bundle --minify --sourcemap --target=chrome58,firefox57,safari11,edge16",
+    "start": "npm run bundle && neu run .",
+    "build": "npm run bundle && neu build -r && mkdir dist\\pochitarounding\\video && copy video\\ dist\\pochitarounding\\video"
+  },
+  "dependencies": {
+    "esbuild": "0.17.0",
+    "neutralinojs-types": "^2.0.0"
+  }
+}

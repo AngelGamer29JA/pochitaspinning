@@ -1,0 +1,1 @@
+export type * as Neutralino from "neutralinojs-types"
